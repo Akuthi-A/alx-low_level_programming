@@ -12,10 +12,8 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (ch == 'z')
-			putchar('z');
-		else
-			putchar(ch);
+		putchar(ch);
 	}
+	putchar(' ');
 	return (0);
 }
