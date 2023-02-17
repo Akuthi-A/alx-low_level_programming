@@ -13,7 +13,7 @@ int main(void)
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (ch == 'z')
-			putchar('z\n');
+			putchar('z');
 		else
 			putchar(ch);
 	}
