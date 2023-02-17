@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return - outputs alphabets excluding q and e in lowercase
+ * Return: outputs alphabets excluding q and e in lowercase
  */
 
 int main(void)
