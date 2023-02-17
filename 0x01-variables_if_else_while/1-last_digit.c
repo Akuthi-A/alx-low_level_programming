@@ -19,7 +19,9 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	/*Last digit of 629438752 is 2 and is less than 6 and not 0*/
-	int last_digit = n % 10;
+	int last_digit;
+
+	last_digit = n % 10;
 
 	if (last_digit > 5)
 	{
