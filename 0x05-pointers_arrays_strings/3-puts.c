@@ -9,18 +9,9 @@
 
 void _puts(char *str)
 {
-	int count = 0;
-
-	while (str[count] != '\0')
+	for (; *str = '\0'; str++)
 	{
-		count++;
-	}
-	
-	int j;
-
-	for (j = 0; j < count; j++)
-	{
-		_putchar(str[j]);
+		_putchar(*str);
 	}
 	_putchar('\n');
 }
