@@ -11,14 +11,14 @@ void _puts(char *str)
 {
 	int count = 0;
 
-	while (s[count] != '\0')
+	while (str[count] != '\0')
 	{
 		count++;
 	}
 	
 	int j;
 
-	for (j = 0, j < count, j++)
+	for (j = 0; j < count; j++)
 	{
 		_putchar(str[j]);
 	}
