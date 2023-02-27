@@ -9,10 +9,16 @@
 
 void _puts(char *str)
 {
-	int i = _strlen(str);
+	int count = 0;
+
+	while (s[count] != '\0')
+	{
+		count++;
+	}
+	
 	int j;
 
-	for (j = 0, j < i, j++)
+	for (j = 0, j < count, j++)
 	{
 		_putchar(str[j]);
 	}
