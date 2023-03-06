@@ -19,13 +19,12 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (!(s[i] >= 'a' && s[i] <= 'z') && !(s[i] >= 'A' && s[i] <= 'Z'))
 			{
-				return count;
+				return (count);
 			}
 			if (s[i] == accept[j])
 			{
 				count = count + 1;
 			}
-		
 		}
 	}
 	return (count);
