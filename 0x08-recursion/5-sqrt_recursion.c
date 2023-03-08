@@ -5,8 +5,15 @@
  * @n: number under sqrt
  *
  * Return: sqrt of n
+ *
+ * _sqrt - determines sqrt
+ * @x: counter
+ * @y: number under sqrt
+ *
+ * Return: sqrt of y
  */
 
+int _sqrt(int x, int y);
 
 int _sqrt_recursion(int n)
 {
