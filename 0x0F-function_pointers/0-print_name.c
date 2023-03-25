@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stddef.h>
 
 /**
  * print_name - prints name passed in func f
@@ -10,7 +11,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL || f = NULL)
+	if (name == NULL || f == NULL)
 	{
 		return;
 	}
