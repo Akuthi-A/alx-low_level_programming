@@ -19,7 +19,7 @@ size_t print_listint(const listint_t *h)
 	{
 		return (0);
 	}
-	
+
 	count = 0;
 	while (h != 0)
 	{
