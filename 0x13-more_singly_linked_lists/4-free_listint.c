@@ -1,22 +1,23 @@
 #include "lists.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * free_listint - frees linked list
- * @head: linked list
+ * free_listint - frees nodes of linked list
+ * @head: points to first node
  *
  * Return: void
  */
 
 void free_listint(listint_t *head)
 {
-	listint_t *current = head;
-	listint_t *next;
+	listint_t *curr;
 
-	while (current != NULL)
+	while (head != NULL)
 	{
-		next = current->next;
-		free(current);
-		current = next;
+		curr = head;
+		head = head->next;
+		free(curr);
 	}
+
 }
