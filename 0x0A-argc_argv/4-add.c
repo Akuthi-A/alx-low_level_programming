@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * main - main function
@@ -11,11 +12,11 @@
 
 int main(int argc, char *argv[])
 {
-	int i, result = 0;
+	int i, j, result = 0;
 
 	if (argc == 1)
 	{
-		return (0);
+		printf("%d\n", 0);
 	}
 	else if (argc < 3)
 	{
@@ -26,11 +27,14 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (argv[i] >= 48 && argv[i] <= 57)
+			for (j = 0; argv[i][j]; j++)
 			{
-				printf("Error\n");
+				if (!isdigit(argv[i][j]))
+				{
+					printf("Error\n");
 
-				return (1);
+					return (1);
+				}
 			}
 			result += atoi(argv[i]);
 		}
