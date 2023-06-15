@@ -6,7 +6,7 @@
  * @s2: string 2
  * @n: number of bytes of string 2
  *
- * @Return: pointer to new string, else NULL
+ * Return: pointer to new string, else NULL
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		s1 = "";
-	
+
 	if (s2 == NULL)
 		s2 = "";
 
