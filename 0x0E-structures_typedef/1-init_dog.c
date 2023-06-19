@@ -18,4 +18,10 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		float age;
 		char *owner;
 	};
+
+	struct dog *d;
+
+	d -> name = name;
+	d -> age;
+	d -> owner;
 }
