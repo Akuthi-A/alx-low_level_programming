@@ -88,7 +88,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (formats[j].type != NULL)
 		{
-			if (*(formats[j].type) == format[j])
+			if (*(formats[j].type) == format[i])
 			{
 				printf("%s", separator);
 				(formats[j].f)(list);
