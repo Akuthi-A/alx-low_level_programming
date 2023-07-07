@@ -8,7 +8,7 @@
  * Return: 1, else -1 (upon failure)
  */
 
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int i;
 
