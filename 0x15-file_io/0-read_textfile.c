@@ -3,7 +3,7 @@
 /**
  * read_textfile - reads textfile onto console
  * @filename: filename
- * @letter: num of letters to be read
+ * @letters: num of letters to be read
  *
  * Return: number of bytes successfully read, else 0
  */
