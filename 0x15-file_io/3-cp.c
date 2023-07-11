@@ -14,7 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-	int fd1, fd2;
+	int fd1, fd2, bytes_read;
 	char buffer[BUFF_SIZE];
 
 	if (argc != 3)
@@ -37,9 +37,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while ((read(fd1, buffer, BUFF_SIZE)) != 0)
+	while ((bytes_read = read(fd1, buffer, BUFF_SIZE)) != 0)
 	{
-		write(fd2, buffer, BUFF_SIZE);
+		write(fd2, buffer, bytes_read);
 	}
 
 	if ((close(fd1)) == -1)
