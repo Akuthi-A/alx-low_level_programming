@@ -11,8 +11,9 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int check_idx;
-	dlistint_t temp;
-
+	dlistint_t *temp;
+	
+	temp = head;
 	check_idx = 0;
 	if (head == NULL)
 	{
@@ -30,4 +31,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 			check_idx += 1;
 		}
 	}
+	return (temp);
 }
